@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>komol kazi | Portfolio</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+    body{background:#f4f7fb;color:#1f2933;line-height:1.6}
+    a{text-decoration:none}
+
+    /* HEADER / INTRO */
+    header{background:#0f172a;color:#fff;padding:80px 20px;text-align:center}
+    header h1{font-size:42px;margin-bottom:10px}
+    header p{font-size:18px;opacity:.9;max-width:700px;margin:auto}
+    .cv-download{display:inline-block;margin-top:25px;background:#2563eb;color:#fff;padding:14px 26px;border-radius:8px;font-weight:bold}
+
+    /* CONTAINER */
+    .container{max-width:1100px;margin:auto;padding:60px 20px}
+
+    /* PROFILE */
+    .profile{background:#fff;padding:40px;border-radius:14px;display:flex;gap:40px;flex-wrap:wrap;align-items:center;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+    .profile-left{text-align:center}
+    .profile-left img{width:200px;height:200px;border-radius:50%;object-fit:cover;border:5px solid #2563eb}
+    .profile-left h2{margin-top:15px;font-size:26px}
+    .profile-left p{color:#2563eb;font-weight:bold}
+    .profile-right p{font-size:16px}
+
+    /* SECTION */
+    section{margin-top:70px}
+    .section-title{font-size:30px;margin-bottom:25px}
+
+    /* EDUCATION */
+    .education{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+    .edu-card{background:#fff;padding:25px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.06)}
+    .edu-card h4{color:#2563eb;margin-bottom:8px}
+
+    /* CONTACT */
+    .contact{background:#fff;padding:40px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:40px}
+    .contact-info p{margin-bottom:12px}
+    .social a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:10px;background:#e6efff;margin-right:10px;color:#2563eb;font-weight:bold}
+    form{display:grid;gap:15px}
+    form input,form textarea{padding:14px;border-radius:8px;border:1px solid #d1d5db;font-size:15px}
+    form button{background:#2563eb;color:#fff;border:none;padding:14px;border-radius:10px;font-size:16px;font-weight:bold;cursor:pointer}
+
+    /* FOOTER */
+    footer{text-align:center;padding:30px;background:#0f172a;color:#fff;margin-top:80px}
+
+    /* RESPONSIVE */
+    @media(max-width:768px){
+      .contact-grid{grid-template-columns:1fr}
+      header h1{font-size:34px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hello, I’m MD Komol Hossen Sujon</h1>
+  <p>I am a passionate web developer open to new projects, collaborations, and full‑time opportunities.</p>
+  <a href="c:\Users\Muhammad_Sujon\Downloads\Documents\SUJON 01.pdf" class="cv-download" download>Download CV</a>
+</header>
+
+<div class="container">
+
+  <!-- PROFILE -->
+  <div class="profile">
+    <div class="profile-left">
+      <img src="c:\Users\Muhammad_Sujon\Downloads\ME.jpg" alt="Profile Photo">
+      <h2>MD Komol Hossen Sujon</h2>
+      <p>Web Developer</p>
+    </div>
+    <div class="profile-right">
+      <p><strong>About Me</strong></p>
+      <p>I specialize in building responsive and user‑friendly websites using HTML and CSS. I enjoy turning ideas into clean, practical digital experiences.</p>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2 class="section-title">Education</h2>
+    <div class="education">
+      <div class="edu-card">
+        <h4>Bachelor Degree</h4>
+        <p>Uttara University</p>
+        <p>CSE</p>
+        <p>JAN 2026 – continuing</p>
+      </div>
+      <div class="edu-card">
+        <h4>Diploma</h4>
+        <p>SSR Institute of Technology and Management</p>
+        <p>Diploma in Computer Science</p>
+        <p>April 2020 – DEC 2024</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <div class="contact">
+      <h2 class="section-title">Let’s Work Together</h2>
+      <p style="margin-bottom:25px">Open to new projects, collaborations, or full‑time opportunities.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Office</strong><br>Ashulia, Dhaka, Bangladesh</p>
+          <p><strong>Phone</strong><br>+880 18060 01681</p>
+          <p><strong>Email</strong><br>muhammadkomolkazi@email.com</p>
+
+          <div class="social">
+            <a href="#">T</a>
+            <a href="#">F</a>
+            <a href="#">G</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+
+        <form action="mailto:your@email.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" rows="6" placeholder="Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  © Komol Kazi. All rights reserved.
+</footer>
+
+</body>
+</html>
